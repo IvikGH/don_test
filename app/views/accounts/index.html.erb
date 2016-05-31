@@ -1,0 +1,4 @@
+<% @accounts.each do |account| %>
+  <%=  account.name %>
+  <%= button_to "Уведомить пользователя о балансе", notify_path(account) %>
+<% end %>
